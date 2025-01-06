@@ -4,11 +4,14 @@ A [kitty terminal](https://sw.kovidgoyal.net/kitty/) extension that opens a stan
 
 ## Usage
 
+> [!IMPORTANT]
+> This extension requires [VSCode](https://code.visualstudio.com) with `code` tools installed in `/usr/local/bin`.
+
 Download `go_panics.py` and move it into `~/.configs/kitty/` (or your equivalent).
 
-Map to a key
+Map to a key (`ctrl+g`)
 ```
-map ctrl+g kitten process_go.py
+map ctrl+g kitten go_panics.py
 ```
 
 Use when viewing a Go panic, like the following (found in `example/`)
@@ -32,7 +35,4 @@ main.main()
 exit status 2
 ```
 
-Then hit `ctrl+g`.
-
-> [!IMPORTANT]
-> This extension requires [VSCode](https://code.visualstudio.com) with `code` tools installed in `/usr/local/bin`.
+Finally, hit `ctrl+g`.
